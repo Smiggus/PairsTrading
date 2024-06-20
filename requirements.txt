@@ -1,0 +1,10 @@
+cupy_cuda11x==13.1.0
+joblib==1.4.0
+matplotlib==3.9.0
+numpy==1.26.4
+pandas==2.2.2
+scikit_learn==1.4.2
+statsmodels==0.14.2
+tensorflow==2.10.0
+tqdm==4.66.4
+yfinance==0.2.40
