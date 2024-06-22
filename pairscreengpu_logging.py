@@ -32,9 +32,9 @@ class PairScreener:
         pairs = []
         logging.info("Starting the search for cointegrated pairs.")
         total_combinations = sum(len([stock2 for stock2, sec in self.sector_mapping.items() if sec == sector and stock2 != stock1])
-                                 for stock1 in self.cleaned_data.columns
-                                 for sector in [self.sector_mapping.get(stock1)]
-                                 if sector and sector != 'Unknown')
+                                for stock1 in self.cleaned_data.columns
+                                for sector in [self.sector_mapping.get(stock1)]
+                                if sector and sector != 'Unknown')
 
         with tqdm(total=total_combinations, desc="Finding pairs") as pbar:
             for stock1 in self.cleaned_data.columns:
